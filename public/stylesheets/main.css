@@ -1,35 +1,64 @@
 header{
   position: fixed;
-  background-image: url(/images/backgroundPattern3.jpg);
-  height: 80px;
+  background: linear-gradient(to bottom, rgba(20, 54, 70, .25) 0%, rgba(20, 54, 70, .75) 20%, rgba(20, 54, 70, 1) 85%,  rgba(20, 54, 70, 1) 100%), url('/images/backgroundPattern3.jpg');
+  padding: 5px;
+  height: 115px;
   top: 0;
   right: 0;
   left: 0;
   z-index: 1000;
 }
-a:link{
-  color: rgb(41, 115, 119);
+body{
+  background-color: rgb(103, 179, 184);
 }
-#headerContent{
-  /*margin: 10px;*/
-  padding: 5px;
-  background-color: rgba(20, 54, 70, .98);
+a:link{
+  color: rgb(103, 179, 184);
 }
 #name{
-  font-family: 'Stalemate', cursive;
-  color: rgb(41, 115, 119);
+  font-family: 'Dancing Script', cursive;
+  color: rgb(103, 179, 184);
   font-size: 40px;
-  /*margin-top: 10px;*/
+  text-shadow: 2px 2px 4px #000000;
   margin-left: 20px;
 }
 #nav{
   float: right;
   margin-right: 40px;
   font-family: 'Open Sans Condensed', sans-serif;
-  color: rgb(41, 115, 119);
+  color: rgb(103, 179, 184);
   font-size: 20px;
 }
 #pageArea{
-margin-top: 150px;
-padding: 30px;
+  margin-top: 110px;
+  padding: 30px;
+
+}
+#pageArea h1{
+  font-family: 'Dancing Script', cursive;
+}
+#pageArea p{
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+#aboutText{
+  background-color: rgba(245, 245, 245, .5);
+  margin: 15px;
+  padding: 20px;
+  border-style: solid;
+  border-color: white;
+  border-width: 5px;
+}
+#aboutText h1{
+  font-size: 30px;
+}
+#aboutText img{
+  /*transform: rotate(8deg);*/
+  float: right;
+  border-style: solid;
+  border-color: white;
+  border-width: 5px;
+  margin: 10px;
+}
+#aboutText p{
+  font-size: 15px;
+  margin:12px;
 }
