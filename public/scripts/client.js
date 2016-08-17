@@ -1,25 +1,28 @@
 console.log("client.js is sourced");
 
-//create an ng app for the page
-var myApp = angular.module( 'myApp', [] );
-//create a controller
-myApp.controller('sampleController', [ '$scope', function( $scope ){
-  $scope.outsideArray = [];
-  $scope.checkInput = function(){
+var myApp = angular.module('myApp', [ 'ngRoute' ] );
 
-    var input1 = $scope.sampleBinder;
-    var input2 = $scope.sampleBinder2;
+console.log("is there a problem here?");
 
-    console.log('input gathered: ' + input1 + " " + input2 );
-
-    var objectToSend = {
-      "first": input1,
-      "second": input2
-    };
-
-    $scope.outsideArray.push(objectToSend);
-
-    console.log("objectToSend : " + objectToSend );
-
-  }; //end check input function
+myApp.config(['$routeProvider', function($routeProvider){
+  $routeProvider.
+      when("/home", {
+          templateUrl: "/views/routes/home.html",
+          controller: "homeController"
+      }).
+      when("/about", {
+        templateUrl: "/views/routes/about.html",
+        controller: "homeController"
+      }).
+      when("/projects", {
+        templateUrl: "/views/routes/projects.html",
+        controller: "homeController"
+      }).
+      when("/resume", {
+        templateUrl: "/views/routes/resume.html",
+        controller: "homeController"
+      }).
+      otherwise({
+        redirectTo: "/home"
+      });
 }]);

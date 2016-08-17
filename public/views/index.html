@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app = 'myApp'>
+  <head>
+    <meta charset="utf-8">
+    <title>Margaret Culotta</title>
+    <script src="vendors/angular.min.js" type="text/javascript"></script>
+    <script src="vendors/angular-route.js" type="text/javascript" ></script>
+    <script src="scripts/client.js" type="text/javascript"></script>
+    <script src="scripts/controllers/homeController.js" type="text/javascript"></script>
+    <link rel="stylesheet" href= "vendors/bootstrap.min.css"/>
+    <link rel="stylesheet" href= "/stylesheets/main.css"/>
+  </head>
+  <body>
+    <header>
+    <h1> Margaret Culotta Creates</h1>
+    <div ng-include= '"/views/partials/nav.html"'></div>
+    </header>
+      <main ng-view></main>
+      <body ng-controller = 'homeController'>
+  </body>
+</html>
