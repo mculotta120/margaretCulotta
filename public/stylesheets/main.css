@@ -11,6 +11,10 @@ header{
 body{
   background-color: rgb(103, 179, 184);
 }
+footer{
+  text-align: center;
+  margin-bottom: 20px; 
+}
 a:link{
   color: rgb(103, 179, 184);
 }
@@ -44,9 +48,9 @@ a:link{
   box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.45);
   margin: 15px;
   padding: 20px;
-  border-style: solid;
+  /*border-style: solid;
   border-color: white;
-  border-width: 5px;
+  border-width: 5px;*/
 }
 #aboutText h1{
   font-size: 30px;
