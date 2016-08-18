@@ -1,0 +1,41 @@
+
+
+/*#resumeContent{
+  display: block;
+  float: left;
+}*/
+
+
+#resumeText{
+  background-color: rgba(245, 245, 245, .5);
+  box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.45);
+  margin: 15px;
+  padding: 20px;
+  /*border-style: solid;
+  border-color: white;
+  border-width: 5px;*/
+}
+
+#resumeText h1{
+
+}
+#resumeText h2, h3, h4, h5, h6, li, p, i{
+  font-family: 'Open Sans Condensed', sans-serif;
+
+}
+#resumeContent ul{
+  margin-top: 20px;
+}
+#resumeContent li, p{
+  padding: 5px;
+  margin-right: 230px;
+}
+#date{
+  float:right;
+}
+
+#title{
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  border-bottom-width: thin;
+}
