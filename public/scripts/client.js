@@ -16,11 +16,23 @@ myApp.config(['$routeProvider', function($routeProvider){
       }).
       when("/projects", {
         templateUrl: "/views/routes/projects.html",
-        controller: "homeController"
+        controller: "projectController"
       }).
       when("/resume", {
         templateUrl: "/views/routes/resume.html",
         controller: "homeController"
+      }).
+      when("/photography", {
+        templateUrl: "/views/routes/photography.html",
+        controller: "projectController"
+      }).
+      when("/web", {
+        templateUrl: "/views/routes/web.html",
+        controller: "projectController"
+      }).
+      when("/color", {
+        templateUrl: "/views/routes/color.html",
+        controller: "projectController"
       }).
       otherwise({
         redirectTo: "/home"
