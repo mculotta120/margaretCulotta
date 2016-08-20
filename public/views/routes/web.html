@@ -1,40 +1,33 @@
-<div id= "pageArea" ng-init="getProjects()">
+<div id= "pageArea" ng-init="getProjects()" class="gridListdemoBasicUsage">
 <h1> Web Development Projects</h1>
 <h2>Solo Stuff</h2>
-  <div id = "showSoloProjects"  ng-repeat='project in solo_projects'>
-    <h3>{{ project.projectName}}
-    <button class="btn btn-default" ng-click= "" >button</button>
-   </h4>
-   </div>
+   <div class='md-padding' layout="row" layout-wrap >
+       <md-card class="cards" width= "400px" ng-repeat="project in soloProjects">
+         <md-card-content>
 
-<!-- <h3>Wanderlust Comic Reader-</h3>
-<p>
-Wanderlust Comic Reader is a web application that allows digital access to Wanderlust Comics. Wanderlust Comics Group is a small comic book publisher that prints very small runs that tend to sell out quickly.  Wanderlust Comic Reader allows readers to read graphic novels by issue, either page-by-page or panel-by-panel. It gives the reader the ability to zoom in on the artwork to view detail and  it allows exclusive access to illustrator and writer commentary.
-</p>
-<button type="button" name="button" href="https://shielded-hollows-78001.herokuapp.com/">Click to Visit</button>
-<p> Login information- Username: "Guest" Password: "comics" </p>
-<h4>Technologies</h4>
-<ul>
-<li>The MEAN-Stack (MongoDB, Expressjs, AngularJS, Node.js)
-<li>Passport
-<li>Bootstrap
-</ul> -->
+         <h2>{{project.projectName}} </h2>
+         <p>{{project.description}}</p>
+        <button class="btn btn-default" href=" " >click to visit</button>
+         <p>Login Information- {{project.login}} </p>
+
+
+         </md-card-content>
+       </md-card>
+       </div>
+
 
 <h2>Group Efforts </h2>
-<!-- <h3>Shortiez</h3>
-<p>
-Shortiez is a  customizable interactive reading app created for our client, The Black Tech Guy. It is aimed at children in grades K-6 and is intended to be culturally relevant to the individual student. It features a selection of pre-made characters and illustrations that the child can customize and insert into a story of their choice.  The student can also customize words and phrases that appear throughout the story. The application features an Admin mode where new stories and illustrations can be added to the available library and user access can be managed and monitored.
-</p>
-<h4>Development Team</h4>
-Oliver Langmo
-<br>Sophia Benson
-<br>Lanny Maetzhold
-<br>Gini Tyson
+ <div class='md-padding' layout="row" layout-wrap >
+     <md-card class="cards" width= "400px" ng-repeat="project in groupProjects">
+       <md-card-content>
 
-<h4>Technologies</h4>
-<ul>
-<li>The MEAN-Stack (MongoDB, Expressjs, AngularJS, Node.js)
-<li>Passport
-<li>Bootstrap
-</ul> -->
-</div>
+       <h2>{{project.projectName}} </h2>
+       <p>{{project.description}}</p>
+      <button class="btn btn-default" href=" " >click to visit</button>
+       <p>Login Information- {{project.login}} </p>
+       <p>Development team- {{project.devTeam}} </p>
+
+       </md-card-content>
+     </md-card>
+     </div>
+   </div>
