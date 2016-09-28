@@ -11,6 +11,7 @@
   transition: all 400ms ease-out 50ms;
 }
 .cards{
+  background-color: white;
   border-radius: 10px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 60px rgba(0, 0, 0, 0.1) inset;
 }
