@@ -18,6 +18,12 @@ footer{
 a:link{
   color: rgb(103, 179, 184);
 }
+img {
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;}
+
 #name{
   font-family: 'Dancing Script', cursive;
   color: rgb(103, 179, 184);
@@ -44,7 +50,7 @@ a:link{
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
-    margin-right: 50px;
+    margin-right: 100px;
 }
 
 .dropdown:hover .dropdown-content {

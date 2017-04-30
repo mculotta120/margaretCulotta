@@ -1,0 +1,10 @@
+<div id= "pageArea" >
+<h1>Retouching</h1>
+<h3>Click each image to toggle between before and after.</h3>
+<div ng-repeat="piece in pieces">
+  <div class="followrow">
+    <a ng-click="toggleImage(piece)"><img id="followbutton" ng-src="{{piece.imgUrl}}" width= "60%"/>
+    </a>
+  </div>
+</div>
+</div>

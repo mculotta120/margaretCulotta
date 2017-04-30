@@ -34,6 +34,10 @@ myApp.config(['$routeProvider', function($routeProvider){
         templateUrl: "/views/routes/color.html",
         controller: "projectController"
       }).
+      when("/retouching", {
+        templateUrl: "/views/routes/retouching.html",
+        controller: "projectController"
+      }).
       otherwise({
         redirectTo: "/home"
       });

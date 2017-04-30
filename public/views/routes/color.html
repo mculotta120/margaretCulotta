@@ -1,3 +1,13 @@
-<div id= "pageArea">
-<h1> Content coming soon! </h1>
+<div id= "pageArea" >
+<h1>Color</h1>
+<img ng-src="{{currentColorPiece.imgUrl}}" height= "200px" />
+<!-- display page thumbnails -->
+  <div class= "container">
+    <div class = "row" id= "pageThumbnails">
+      <div class= "" ng-repeat='colorImage in colorImages'>
+        <button type="button" class="" name="thumbnail_button" ng-click="thumbnailOpen( $index )"><img ng-src="{{colorImage.imgUrl}}" height= "40px" /></button>
+      </div>
+    </div>
+    </div>
+
 </div>
